@@ -1,1 +1,1 @@
-alert("It is working");
+Console.log("It is working");
