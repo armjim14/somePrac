@@ -1,1 +1,1 @@
-Console.log("It is working");
+Console.log("JavaScript enabled");
