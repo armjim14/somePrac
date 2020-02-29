@@ -5,32 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./style.com"> -->
+    <link rel="stylesheet" href="/style">
 </head>
 <body>
     <h1>Hello world</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit itaque veritatis, 
-        consectetur asperiores odio porro quo iste numquam aspernatur sed fuga quisquam ipsa dolores alias, 
-        libero dicta recusandae veniam.</p>
-<!-- <script src="./logic.js"></script> -->
-<script>
-
-    let word = "cat";
-
-    function rword(str){
-
-        let first = str.split("");
-        let sec = [];
-
-        for ( let i = 0; i < first.length; i++){
-            sec.unshift(first[i]);
-        }
-
-        console.log(sec.join(""));
-    }
-
-    rword(word);
-
-</script>
+    <input type="text" id="itemName" placeholder="Name"><br><br>
+    <input type="text" id="itemPrice" placeholder="Price"><br><br>
+    <input type="text" id="itemQuanity" placeholder="Quanity"><br><br>
+    <button id="addItem">Submit</button>
+<script src="/jQuery"></script>
+<script src="/logic"></script>
 </body>
 </html>

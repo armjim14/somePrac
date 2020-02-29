@@ -1,5 +1,15 @@
-Console.log("JavaScript enabled");
+let addItem = document.getElementById("addItem");
 
-for( let i = 0; i < 5; i++ ){
-     Console.log(i);
-}
+addItem.addEventListener("click", () => {
+
+     let ob = {
+          test: "test"
+     }
+
+     console.log("here")
+
+     $.post("/post/item", ob)
+          .then( (res) => {
+               console.log(res)
+          })
+})
