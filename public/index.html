@@ -12,6 +12,25 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit itaque veritatis, 
         consectetur asperiores odio porro quo iste numquam aspernatur sed fuga quisquam ipsa dolores alias, 
         libero dicta recusandae veniam.</p>
-<script src="./logic.js"></script>
+<!-- <script src="./logic.js"></script> -->
+<script>
+
+    let word = "cat";
+
+    function rword(str){
+
+        let first = str.split("");
+        let sec = [];
+
+        for ( let i = 0; i < first.length; i++){
+            sec.unshift(first[i]);
+        }
+
+        console.log(sec.join(""));
+    }
+
+    rword(word);
+
+</script>
 </body>
 </html>
