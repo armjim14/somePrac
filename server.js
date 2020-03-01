@@ -33,7 +33,7 @@ app.get("/jQuery", (req, res) => {
     res.sendFile(path.join(__dirname, "./public/jQuery.js"));
 })
 
-require("./queries.js")(app)
+require("./queries.js")(app, conn)
 
 app.listen(3000, () => {
     console.log("Listening...");
