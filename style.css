@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(211, 209, 207);
+}
+
+/* making the title larger and organizing it */
+#title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* making the parent element ( this one ) height larger to table can also be larger and this element will center the child elements */
+section {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+table {
+    font-size: 5rem;
+    width: 350px;
+    height: 80%;
+    text-align: center;
+    border: black solid 1px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    border: black solid 1px;
+    padding-bottom: 40px;
+}
+
+td:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.levelStatus {
+    text-align: center;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.levelStatus:hover {
+    cursor: pointer;
+}
+
+#reset:hover {
+    color: rgb(240, 95, 42)
+}
