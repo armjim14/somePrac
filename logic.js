@@ -10,7 +10,7 @@ let easy = document.getElementById("easy");
 let med = document.getElementById("med");
 let hard = document.getElementById("hard");
 let reset = document.getElementById("reset");
-let title = document.getElementById("title");
+let title = document.getElementById("forMessage");
 
 // Auto starts on med
 med.style.textDecoration = "underline";
@@ -461,32 +461,17 @@ function checkUsersOptions() {
 function sendMessage(str) {
 
     let theCount = 0;
-    let back = true;
-    let theColor = back ? "red" : "black";
     title.innerText = str;
 
     let inta = setInterval(() => {
 
         theCount++
-        title.style.color = theColor;
-        back = !back
 
         if ( theCount === 5 ){
             clearInterval(inta)
-            theCount = 0;
-            title.style.color = "black"
+            title.innerText = ""
         }
     }, 500)
-
-    let inta2 = setInterval(() => {
-
-        theCount++
-
-        if ( theCount === 2 ){
-            clearInterval(inta2)
-            title.innerText = "Tic Tac Toe";
-        }
-    }, 1000)
 
 }
 
@@ -499,7 +484,7 @@ function resetAll() {
     turnsTaken = 0;
     winnerExist = false;
     changeAble = true;
-    title.innerText = "Tic Tac Toe";
+    title.innerText = "";
 
     for (let i = 0; i < checkBox.length; i++) {
         checkBox[i].innerText = ".";

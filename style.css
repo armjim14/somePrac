@@ -51,3 +51,12 @@ td:hover {
 #reset:hover {
     color: rgb(240, 95, 42)
 }
+
+hr {
+    border: black .5px solid;
+    width: 200px;
+}
+
+#forMessage {
+    color: darkmagenta;
+}
