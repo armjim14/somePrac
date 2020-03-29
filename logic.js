@@ -23,7 +23,7 @@ easy.addEventListener("click", () => {
         med.style.textDecoration = "none";
         hard.style.textDecoration = "none";
     } else {
-        sendMessage("Unable to change once game started, click reset game to change difficulty level");
+        sendMessage("Please reset game to change difficulty");
     }
 })
 med.addEventListener("click", () => {
@@ -33,7 +33,7 @@ med.addEventListener("click", () => {
         med.style.textDecoration = "underline";
         hard.style.textDecoration = "none";
     } else {
-        sendMessage("Unable to change once game started, click reset game to change difficulty level");
+        sendMessage("Please reset game to change difficulty");
     }
 })
 hard.addEventListener("click", () => {
@@ -43,7 +43,7 @@ hard.addEventListener("click", () => {
         med.style.textDecoration = "none";
         hard.style.textDecoration = "underline";
     } else {
-        sendMessage("Unable to change once game started, click reset game to change difficulty level");
+        sendMessage("Please reset game to change difficulty");
     }
 })
 
