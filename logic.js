@@ -38,7 +38,7 @@ med.addEventListener("click", () => {
 })
 hard.addEventListener("click", () => {
     if (changeAble){
-        difficulty = 18;
+        difficulty = 22;
         easy.style.textDecoration = "none";
         med.style.textDecoration = "none";
         hard.style.textDecoration = "underline";
